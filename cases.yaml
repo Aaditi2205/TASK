@@ -1,2 +1,71 @@
-﻿cases: []
+﻿cases:
+  - id: case_01
+    description: Simple aggregation over customers by country.
+    question: Which country has the most customers?
+    expected_status: success
+
+  - id: case_02
+    description: Count invoices in the database.
+    question: How many invoices were created?
+    expected_status: success
+
+  - id: case_03
+    description: Top customers by total spending.
+    question: List the top 5 customers by total spending.
+    expected_status: success
+
+  - id: case_04
+    description: Join employees and customers through support assignment.
+    question: Which employee supports customer Jane Peacock?
+    expected_status: success
+
+  - id: case_05
+    description: Filter tracks by genre.
+    question: Show all Rock tracks.
+    expected_status: success
+
+  - id: case_06
+    description: Artist-level aggregation over albums.
+    question: Which artist has the most albums?
+    expected_status: success
+
+  - id: case_07
+    description: Average invoice total.
+    question: What is the average invoice total?
+    expected_status: success
+
+  - id: case_08
+    description: Ambiguous request without a clear business rule.
+    question: Who is the best customer?
+    expected_status: ambiguous
+
+  - id: case_09
+    description: Churn prediction is not available from the database.
+    question: Which customers are likely to churn?
+    expected_status: unanswerable
+
+  - id: case_10
+    description: List all playlists.
+    question: List all playlists.
+    expected_status: success
+
+  - id: case_11
+    description: Filter invoices by country.
+    question: Show invoices from Germany.
+    expected_status: success
+
+  - id: case_12
+    description: Count tracks by genre.
+    question: Which genre has the most tracks?
+    expected_status: success
+
+  - id: case_13
+    description: Empty result scenario for a customer filter.
+    question: Show customers from Antarctica.
+    expected_status: success
+
+  - id: case_14
+    description: Album lookup with a table-specific filter.
+    question: Which albums were released by AC/DC?
+    expected_status: success
 
